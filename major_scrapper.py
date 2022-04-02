@@ -49,8 +49,8 @@ import collections
 
 # get_all_pages("https://www.cs.princeton.edu/courses/catalog")
 
+# Get List of majors
 def get_majors(url):
-    # row small-collapse large-uncollapse accordion-item row ab undergraduate-certificate graduate-certificate
     majors = []
     source_code = requests.get(url)
     plain_text=source_code.content
@@ -62,6 +62,7 @@ def get_majors(url):
 
 majors_list = get_majors("https://www.princeton.edu/academics/areas-of-study")
 
+# Get courses of a particular Major
 def get_major_courses(url):
     major_course_list = []
     source_code = requests.get(url)
@@ -80,46 +81,39 @@ major = major.lower()
 major = major.replace(" ", "-")
 url = "https://www.princeton.edu/academics/area-of-study/"+major
 major_course_list = get_major_courses(url)
-for i in major_course_list:
+
+# Gets data of academic calender
+def academic_calender(url):
+    events = []
+    source_code = requests.get(url)
+    plain_text=source_code.content
+    soup = BeautifulSoup(plain_text, features="html.parser")
+    event_list = soup.find('div', {'class' : 'item-list'})
+    for link in event_list.findAll('li'):
+        temp = []
+        date = link.find('div', {'class' : 'date-long'})
+        temp.append(" ".join(date.text.split()))
+        title = link.find('div', {'class' : 'title'})
+        temp.append(" ".join(title.text.split()))
+        events.append(temp)
+    return events
+
+url = "https://registrar.princeton.edu/academic-calendar-and-deadlines"
+all = "?audience[216]=216&audience[211]=211&audience[206]=206"
+ug = "?audience[206]=206"
+grad = "?audience[211]=211"
+faculty = "?audience[216]=216"
+pg = "&page=1"
+input = all
+type = "0"
+if type == "ug":
+    url += ug + pg
+elif type == "grad":
+    url += grad + pg
+elif type == "faculty":
+    url += faculty + pg
+else:
+    url += all + pg
+events = academic_calender(url)
+for i in events:
     print(i)
-
-
-
-#### This program scrapes naukri.com's page and gives our result as a
-#### list of all the job_profiles which are currently present there.
-
-# import requests
-# from bs4 import BeautifulSoup
-# from selenium import webdriver
-# from selenium.webdriver.common.keys import Keys
-# import time
-
-# #url of the page we want to scrape
-# url = "https://www.naukri.com/top-jobs-by-designations# desigtop600"
-
-# # initiating the webdriver. Parameter includes the path of the webdriver.
-# driver = webdriver.Chrome('./chromedriver')
-# driver.get(url)
-
-# # this is just to ensure that the page is loaded
-# time.sleep(5)
-
-# html = driver.page_source
-
-# # this renders the JS code and stores all
-# # of the information in static HTML code.
-
-# # Now, we could simply apply bs4 to html variable
-# soup = BeautifulSoup(html, "html.parser")
-# all_divs = soup.find('div', {'id' : 'nameSearch'})
-# job_profiles = all_divs.find_all('a')
-
-# # printing top ten job profiles
-# count = 0
-# for job_profile in job_profiles :
-# 	print(job_profile.text)
-# 	count = count + 1
-# 	if(count == 10) :
-# 		break
-
-# driver.close() # closing the webdriver
