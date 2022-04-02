@@ -115,5 +115,23 @@ elif type == "faculty":
 else:
     url += all + pg
 events = academic_calender(url)
-for i in events:
+
+# Various Facilities and Labs
+def get_labs(url):
+    labs = []
+    source_code = requests.get(url)
+    plain_text=source_code.content
+    soup = BeautifulSoup(plain_text, features="html.parser")
+    for link in soup.findAll('div', {'class' : 'card-section'}):
+        temp = []
+        name = link.find('h3').text
+        temp.append(" ".join(name.split()))
+        temp.append(" ".join(link.findAll('div')[1].text.split()))
+        labs.append(temp)
+    return labs
+
+labs = get_labs("https://www.princeton.edu/research/facilities-labs")    
+
+
+for i in labs:
     print(i)
