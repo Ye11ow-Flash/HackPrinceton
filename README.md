@@ -96,5 +96,5 @@ Feel free to reach out to our team members. We will be happy to help you.
 
 ## Team members:
 - [@ye11ow_flash](https://www.linkedin.com/in/jaineel97/)
-- [@]()
-- [@]()
+- [@michael](https://github.com/weimichael)
+- [@AtulyaL](https://github.com/AtulyaL)
