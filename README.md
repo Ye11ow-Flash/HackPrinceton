@@ -95,6 +95,6 @@ including slack, telegram, websites, or even Alexa skills. And because this is a
 Feel free to reach out to our team members. We will be happy to help you.
 
 ## Team members:
-- [@ye11ow_flash](https://www.linkedin.com/in/jaineel97/)
-- [@michael](https://github.com/weimichael)
-- [@AtulyaL](https://github.com/AtulyaL)
+- [@ye11ow_flash](https://www.linkedin.com/in/jaineel97/): implemented scraping functionality
+- [@michael](https://github.com/weimichael): implemented bulk of bot, including all commands and formatting
+- [@AtulyaL](https://github.com/AtulyaL): involved in initial setup of bot
