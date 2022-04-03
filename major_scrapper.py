@@ -73,12 +73,13 @@ def get_majors(url):
 
 
 majors_list = get_majors("https://www.princeton.edu/academics/areas-of-study")
-for i in majors_list:
-    print(i)
+# for i in majors_list:
+#     print(i)
 
 # Get courses of a particular Major
 def get_major_courses(url):
     major_course_list = []
+    temp_list = []
     source_code = requests.get(url)
     plain_text=source_code.content
     soup = BeautifulSoup(plain_text, features="html.parser")
@@ -88,6 +89,10 @@ def get_major_courses(url):
         temp.append(link.find('h2').text)
         temp.append("Professor/Instructor: " + link.findAll('div')[1].text.split("Professor/Instructor")[1])
         major_course_list.append(temp)
+    i = 0
+    for link in soup.findAll('div', {'class' : 'views-field views-field-body columns small-12 medium-6'}):
+        major_course_list[i].append(" ".join(link.text.split()))
+        i += 1
     return major_course_list
 
 major = "Computer Science"
@@ -95,6 +100,8 @@ major = major.lower()
 major = major.replace(" ", "-")
 url = "https://www.princeton.edu/academics/area-of-study/"+major
 major_course_list = get_major_courses(url)
+for i in major_course_list:
+    print(i)
 
 # Gets data of academic calender
 def academic_calender(url):
