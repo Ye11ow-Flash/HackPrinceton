@@ -82,7 +82,7 @@ including slack, telegram, websites, or even Alexa skills. And because this is a
 
 <h1 align="center">
   <br>
-  <a href="https://github.com/Ye11ow-Flash/HackPrinceton/blob/main/BotReply.png"><img src="https://github.com/Ye11ow-Flash/HackPrinceton/blob/main/BotReply.png" alt="Pton-Bot" width="800"></a>
+  <a href="https://github.com/Ye11ow-Flash/HackPrinceton/blob/main/Botdemo.png"><img src="https://github.com/Ye11ow-Flash/HackPrinceton/blob/main/Botdemo.png" alt="Pton-Bot" width="800"></a>
 <!--   <br>
   Json Schema
   <br> -->
