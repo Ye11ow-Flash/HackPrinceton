@@ -74,7 +74,7 @@ along with labs are facilities for research.
 Attached to the bot is a seperate library of functions, used to access the bulletin. This means that these functions can be ported to any platform, 
 including slack, telegram, websites, or even Alexa skills. And because this is a Discord bot, it can be added to any discord server!
 
-###4. ⚛️ Faculty
+### 4. ⚛️ Faculty
 
 **Pton-Bot** also contains calender details for faculty members. 
 
