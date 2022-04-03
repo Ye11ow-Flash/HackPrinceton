@@ -78,6 +78,8 @@ Since this is a Discord bot, it can be added to any discord server! It allows fo
   <br> -->
 </h1>
 
+# Add Pton-Bot to your server
+https://discord.com/api/oauth2/authorize?client_id=959889388639240203&permissions=534723946560&scope=bot
 
 
 # 🆘 Where to get help
