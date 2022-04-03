@@ -27,22 +27,20 @@
 
 # 🧘‍♀️ Light-Bulb Moment
 
-While brainstroming the project ideas for this hackathon, we wanted to make a project which will help majority 
-of the Princeton University's students and help them in their academic planning. 
+While brainstorming the project ideas for this hackathon, we wanted to make a project which will help the majority of Princeton students in their academic planning. 
 
-While choosing courses students are often find it chaotic while shortlisting the courses. 
-Not just that, even browsing through the courses offered in various majors is pretty tedious due to sheer volumn of the data. 
-Switching webpages and remembering where the information is everytime is hectic in itself. 
-There might be a slight chance that a student who is familiar with the university-website can successfully do it, but its too tedious 
-and time consuming process. Not to mention a student who is thinking of applying for the first time - This will be a nightmare for them.
+When choosing courses students often find it chaotic when shortlisting courses. 
+Not just that, even browsing through the courses offered in various majors is tedious due to the sheer volume of data. 
+Switching web pages and remembering where the information is stored is hectic in itself. 
+The student will eventually assemble a completed schedule, but this process is overly time-consuming and tedious. Not to mention the experience of a prospective student - this would be a nightmare for them.
 
-Thus, we present **Pton-Bot**! This is a bot which will ease out this process and make it a fun experience.
+Thus, we present **Pton-Bot**! This is a bot that will ease out this process and make Course-Planning a fun, collaborative experience.
 
 <p align="center"> | <b>Pton-Bot</b>  -  Planning your semester and accessing undergraduage bulleting have never been easier! |</p>
 
 # 👀 What is Pton-Bot?
 
-**Pton-Bot** is a Discord Bot which can be used by any student to get information on courses, majors, and planning out their degree.
+**Pton-Bot** is a Discord Bot that can be used by any student to get information on courses, majors, and planning out their degree.
 
 <br>
 
@@ -52,31 +50,23 @@ Thus, we present **Pton-Bot**! This is a bot which will ease out this process an
 **Pton-Bot** is designed to help Princeton students in their planning and get precise and concise information from the website
 
 - **Pton-Bot** can get information about any course from any major
-- A **simple and easy** way to explore courses, majors, academic calender, and labs
-- Helps in **Academic Planning** of the courses by storing them.
-- Easy way to access academic calender (with various filters).
-- Can give you details about facilities & labs in Princeton University
+- A **simple and easy** way to explore courses, majors, and the academic calendar
+- Easy way to access the academic calendar.
+- Allows you to share and discuss potential classes with peers on Discord.
 
 # 🎮 Features
 
-### 1. 🗺 Planning
+### 1. 📬 Summarize
 
-**Pton-Bot** will allow you to create a plannar of courses you want to takeup during your degree. You can add or remove the courses as per your liking.
-Can also give academic calender schedule which can be used for planning. 
+**Pton-Bot** can give you the crux of the course information and summary of the courses, as well as majors offered by the university. Also, it provides the academic calender as posted by the university.
 
-### 2. 📬 Summarize
+### 2. 🚀 Versatile
 
-**Pton-Bot** can give you the crux of the course information and summary of the courses, as well as majors offered by the university. Also, gives academic calender
-along with labs are facilities for research.
+Since this is a Discord bot, it can be added to any discord server! It allows for students to easily search for any course, area of study, or department.
 
-### 3. 🚀 Versatile
+###3. ⚛️ Faculty
 
-Attached to the bot is a seperate library of functions, used to access the bulletin. This means that these functions can be ported to any platform, 
-including slack, telegram, websites, or even Alexa skills. And because this is a Discord bot, it can be added to any discord server!
-
-### 4. ⚛️ Faculty
-
-**Pton-Bot** also contains calender details for faculty members. 
+**Pton-Bot** also contains calendar details for faculty members. 
 
 # Pton-Bot
 
