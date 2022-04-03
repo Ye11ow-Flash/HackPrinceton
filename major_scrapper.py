@@ -52,15 +52,29 @@ import collections
 # Get List of majors
 def get_majors(url):
     majors = []
+    desc = []
+    data = []
     source_code = requests.get(url)
     plain_text=source_code.content
     soup = BeautifulSoup(plain_text, features="html.parser")
     for link in soup.findAll('a', {'class' : 'accordion-title'}):
         majors.append(" ".join(link.text.split()))
-    return majors
+    for link in soup.findAll('div', {'class' : 'body columns small-12 large-6'}):
+        temp = link.find('p').text
+        desc.append(" ".join(temp.split()))
+    
+    for i in range(len(majors)):
+        temp = []
+        temp.append(majors[i])
+        temp.append(desc[i])
+        data.append(temp)
+
+    return data
 
 
 majors_list = get_majors("https://www.princeton.edu/academics/areas-of-study")
+for i in majors_list:
+    print(i)
 
 # Get courses of a particular Major
 def get_major_courses(url):
@@ -132,6 +146,5 @@ def get_labs(url):
 
 labs = get_labs("https://www.princeton.edu/research/facilities-labs")    
 
-
-for i in labs:
-    print(i)
+# for i in events:
+#     print(i)
