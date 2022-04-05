@@ -80,5 +80,5 @@ Since this is a Discord bot, it can be added to any discord server! It allows fo
 
 ## Team members:
 - [@ye11ow_flash](https://www.linkedin.com/in/jaineel97/): implemented scraping functionality
-- [@michael](https://github.com/weimichael): implemented bulk of bot, including all commands and formatting
+- [@michael](https://github.com/mwei4): implemented bulk of bot, including all commands and formatting
 - [@AtulyaL](https://github.com/AtulyaL): involved in initial setup of bot
