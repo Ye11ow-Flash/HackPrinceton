@@ -78,14 +78,6 @@ Since this is a Discord bot, it can be added to any discord server! It allows fo
   <br> -->
 </h1>
 
-# Add Pton-Bot to your server
-https://discord.com/api/oauth2/authorize?client_id=959889388639240203&permissions=534723946560&scope=bot
-
-
-# 🆘 Where to get help
-
-Feel free to reach out to our team members. We will be happy to help you.
-
 ## Team members:
 - [@ye11ow_flash](https://www.linkedin.com/in/jaineel97/): implemented scraping functionality
 - [@michael](https://github.com/weimichael): implemented bulk of bot, including all commands and formatting
